@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Proud Co.</title>
+    <meta name="description" content="The Proud Co. - Comunidad, creatividad y eventos." />
+    <link rel="icon" type="image/png" href="./imagenes/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    ccc
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div id="logo" class="logo" aria-label="Logo de The Proud Co.">
+                   <img src="./imagenes/logo.png" alt="Logo de The Proud Co." />
+                    <span>Logo</span>
+                </div>
+                <div class="brand-text">
+                    <h1 class="site-title">The Proud Co.</h1>
+                    <p class="tagline">Comunidad, creatividad y experiencias.</p>
+                </div>
+            </div>
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="#quienes-somos">Quiénes somos</a>
+                <a href="#que-hacemos">Qué hacemos</a>
+                <a href="#proximos-eventos">Próximos eventos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="quienes-somos" class="section" aria-labelledby="titulo-quienes-somos">
+            <div class="container">
+                <h2 id="titulo-quienes-somos" class="section-title">Quiénes somos</h2>
+                <p class="lead">
+                    Breve descripción de la historia, misión y valores de The Proud Co. Reemplaza este texto con información real.
+                </p>
+            </div>
+        </section>
+
+        <section id="que-hacemos" class="section alt" aria-labelledby="titulo-que-hacemos">
+            <div class="container">
+                <h2 id="titulo-que-hacemos" class="section-title">Qué hacemos</h2>
+                <p class="lead">
+                    Resumen de servicios, productos o actividades principales. Puedes listar áreas clave y lo que te diferencia.
+                </p>
+                <div class="features">
+                    <article class="card feature">
+                        <h3>Producción</h3>
+                        <p>Planificación y ejecución de eventos con excelencia.</p>
+                    </article>
+                    <article class="card feature">
+                        <h3>Creatividad</h3>
+                        <p>Ideas que conectan marcas con comunidades.</p>
+                    </article>
+                    <article class="card feature">
+                        <h3>Comunidad</h3>
+                        <p>Activaciones y experiencias con impacto real.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="proximos-eventos" class="section" aria-labelledby="titulo-proximos-eventos">
+            <div class="container">
+                <h2 id="titulo-proximos-eventos" class="section-title">Próximos eventos</h2>
+                <p class="lead">Anuncia fechas, lugares y enlaces de registro.</p>
+                <div class="event-grid">
+                    <article class="card event">
+                        <h3>Evento de ejemplo</h3>
+                        <p class="meta">01/01/2026 · Ciudad</p>
+                        <p>Descripción breve del evento y su propuesta de valor.</p>
+                        <a class="button" href="#">Más información</a>
+                    </article>
+                    <article class="card event">
+                        <h3>Encuentro Creativo</h3>
+                        <p class="meta">15/02/2026 · Centro</p>
+                        <p>Charlas, networking y experiencias para la comunidad.</p>
+                        <a class="button" href="#">Registrarme</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="anio"></span> The Proud Co. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Coloca automáticamente el año actual en el footer.
+        (function () {
+            var span = document.getElementById('anio');
+            if (span) span.textContent = new Date().getFullYear();
+        })();
+    </script>
 </body>
 </html>
